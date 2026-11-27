@@ -82,7 +82,7 @@ header img {
 nav {
     grid-area: nav;
     background-color: var(--minColor);
-    background-image: url(../Img/nav2.jpg);
+    background-image: linear-gradient(to right, rgba(216, 180, 72, 0.171), #0000009a),url(../Img/nav2.jpg);
     height: auto;
     height: 660px;
     padding: 40px 16px;
