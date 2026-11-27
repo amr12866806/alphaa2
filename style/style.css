@@ -118,6 +118,10 @@ nav input {
     padding: 7px;
 }
 
+.b1:hover {
+    background-color: var(--fontColor);
+}
+
 nav input:hover {
     transform: scale(1.03);
     transition: all 0.3s ease;
