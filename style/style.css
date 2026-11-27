@@ -78,6 +78,7 @@ header img {
 
 nav {
     grid-area: nav;
+    background-color: var(--minColor);
     background-image: url(../Img/nav2.jpg);
     height: auto;
     height: 360px;
