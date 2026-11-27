@@ -253,8 +253,9 @@ footer span {
     footer {
         font-size: 5px;
     }
+
     main div video {
-        max-height: 60vh; 
+        max-height: 60vh;
     }
 
 }
