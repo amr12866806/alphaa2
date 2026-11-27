@@ -21,6 +21,7 @@ body {
     grid-template-columns: repeat(10, 1fr);
     grid-template-areas: "header header header header header header header header header header"
         "nav nav nav nav nav nav nav nav nav nav "
+        "main main main main main main main main main main"
         "section section section section section  section section section section section "
         "footer footer footer footer footer footer footer footer footer footer ";
     grid-template-rows: auto;
@@ -118,6 +119,35 @@ nav input {
 nav input:hover {
     transform: scale(1.03);
     transition: all 0.3s ease;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+main>div {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+}
+
+main div video {
+    border-radius: 12px;
+    width: auto;
+    min-width: 300px;
+    max-width: 100%;
+    height: auto;
+    max-height: 680px;
+    object-fit: contain;
+    border-color: var(--minColor);
 }
 
 section {
