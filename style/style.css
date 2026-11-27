@@ -42,6 +42,8 @@ header {
     gap: 12px;
     flex-wrap: wrap;
     padding: 10px 20px;
+    position: fixed;
+    width: 100%;
 }
 
 header span {
@@ -82,7 +84,7 @@ nav {
     background-color: var(--minColor);
     background-image: url(../Img/nav2.jpg);
     height: auto;
-    height: 360px;
+    height: 660px;
     padding: 40px 16px;
     background-position: center;
     background-repeat: no-repeat;
@@ -233,8 +235,9 @@ footer span {
 
 @media (max-width: 768px) {
     header {
-        justify-content: center;
+        justify-content: space-between;
         text-align: center;
+        font-size: 15px;
     }
 
     .img {
@@ -274,4 +277,7 @@ footer span {
         width: 50%;
     }
 
+    nav {
+        height: 360px;
+    }
 }
