@@ -6,7 +6,7 @@
 }
 
 :root {
-    --minColor: black;
+    --minColor: RGB(18, 39, 62);
     --fontColor: rgb(216, 179, 72);
 }
 
@@ -31,8 +31,8 @@ body {
 
 header {
     grid-area: header;
-    background-image: linear-gradient(to right, var(--minColor), rgb(255, 231, 145));
-    color: black;
+    background-image: linear-gradient(to right, var(--minColor), #0000009a);
+    color: var(--fontColor);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,6 +41,11 @@ header {
     gap: 12px;
     flex-wrap: wrap;
     padding: 10px 20px;
+}
+
+header span {
+    cursor: pointer;
+
 }
 
 header:hover {
@@ -100,6 +105,14 @@ nav input {
     border-style: none;
 }
 
+.b1 {
+    font-size: clamp(12px, 2vw, 25px);
+    background-image: linear-gradient(to right, var(--minColor), #0000009a);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 7px;
+}
+
 nav input:hover {
     transform: scale(1.03);
     transition: all 0.3s ease;
@@ -156,7 +169,7 @@ section .img>div {
 
 footer {
     grid-area: footer;
-    background-image: linear-gradient(to right, var(--minColor), rgb(255, 231, 145));
+    background-image: linear-gradient(to right, var(--minColor), #00000070);
     min-height: 220px;
     padding: 24px 16px;
     color: var(--fontColor);
@@ -203,5 +216,9 @@ footer span {
 
     .img2 {
         height: 160px;
+    }
+
+    footer {
+        font-size: 5px;
     }
 }
